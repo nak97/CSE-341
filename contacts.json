@@ -1,0 +1,24 @@
+{
+    "Contact": {
+      "first name": "nick",
+      "last name": "Keen",
+      "email": "nicknack2019@yahoo.com",
+      "favorite color": "orange",
+      "birth day": "06/12/1997" },
+      
+      "contact2":{
+      "first name": "baxter",
+      "last name": "dog",
+      "email": "baxter2013@yahoo.com",
+      "favorite color": "brown",
+      "birth day": "08/7/2013" },
+
+      "contact3":{
+        "first name": "mike",
+        "last name": "banana",
+        "email": "bigBanana@yahoo.com",
+        "favorite color": "yellow",
+        "birth day": "02/17/1983" }
+
+    
+    }

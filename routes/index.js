@@ -1,7 +1,7 @@
 const routes = require('express').Router();
+const myController = require('../controllers')
 
-routes.get('/', (req, res, next)=>{
-  res.json('Elfrie ');
-});
+routes.get('/', myController.awesomeFunction);
+
 
 module.exports = routes;
