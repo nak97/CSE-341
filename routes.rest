@@ -1,15 +1,13 @@
-GET http://localhost:8080/contacts 
+GET http://localhost:8080/contacts
 
-GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b2 
+###
 
-GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b3
+GET http://localhost:8080/contacts/663ea60949b05e50b6f90448 
 
-GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b4
+###
 
-GET https://cse341-instructor.herokuapp.com/contacts
+GET http://localhost:8080/contacts/663ea60949b05e50b6f90449
+###
 
-GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b2
+GET http://localhost:8080/contacts/663ea60949b05e50b6f9044a
 
-GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b3
-
-GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b4
