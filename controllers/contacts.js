@@ -26,8 +26,10 @@ const createContact = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     birthDay: req.body.birthday
   };
+  
   const response = await mongodb.getDb().db('contacts').collection('contacts').insertOne(contact);
-  if (response.acknowledge){
+  console.log(response)
+  if (response.acknowledged){
     res.status(201).json(response);
   } else{
     res.status(500).json(response.error || 'some error occured while creating the contact.');
@@ -46,7 +48,7 @@ const createContact = async (req, res) => {
     };
     const response = await mongodb
     .getDb()
-    .db()
+    .db('contacts')
     .collection('contacts')
     .replaceOne({_id: userId }, contact);
     console.log(response);
@@ -59,9 +61,9 @@ const createContact = async (req, res) => {
 
     const deleteContact = async (req,res) => {
       const userId = new ObjectId(req.params.id);
-      const response = await mongodb.getDb().db().collection('contacts').remove({_id: userId},true);
+      const response = await mongodb.getDb().db('contacts').collection('contacts').deleteOne({_id: userId},true);
       console.log(response);
-      if (response.deleteCount > 0) {
+      if (response.deletedCount > 0) {
         res.status(204).send();
       } else {
         res.status(500).json(response.error || 'Some error ocurred while deleting contact. ');
