@@ -1,13 +1,28 @@
 GET http://localhost:8080/contacts/
 
 ###
+# getting requests by id
 
-GET http://localhost:8080/contacts/663ea60949b05e50b6f90448 
+GET http://localhost:8080/contacts/66442859264340371c839c21
 
 ###
 
-GET http://localhost:8080/contacts/663ea60949b05e50b6f90449
+GET http://localhost:8080/contacts/66442859264340371c839c22
 ###
 
-GET http://localhost:8080/contacts/663ea60949b05e50b6f9044a
+GET http://localhost:8080/contacts/66442859264340371c839c23
+###
+# render requests
 
+https://cse-341-1.onrender.com/66442859264340371c839c21
+
+###
+POST http://localhost:8080/contacts HTTP/1.1
+content-Content-Type: application/json
+{
+"firstName": "chuck",
+"lastName": "echeese",
+"email": "chuckecheese@yahoo.com",
+"favoriteColor": "brown",
+"birthday": "04/27/1927"
+}
