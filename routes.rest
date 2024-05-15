@@ -12,17 +12,48 @@ GET http://localhost:8080/contacts/66442859264340371c839c22
 
 GET http://localhost:8080/contacts/66442859264340371c839c23
 ###
-# render requests
 
-https://cse-341-1.onrender.com/66442859264340371c839c21
+https://cse-341-1.onrender.com/contacts/66442859264340371c839c21
 
+###
+PUT http://localhost:8080/contacts/66442859264340371c839c21 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "nick",
+    "lastName": "Keen",
+    "email": "nicknack2019@yahoo.com",
+    "favoriteColor": "blue",
+    "birthday": "06/12/1997"
+}
 ###
 POST http://localhost:8080/contacts HTTP/1.1
 content-Content-Type: application/json
-{
+
+ {
 "firstName": "chuck",
 "lastName": "echeese",
 "email": "chuckecheese@yahoo.com",
 "favoriteColor": "brown",
 "birthday": "04/27/1927"
 }
+###
+DELETE http://localhost:8080/contacts/66442859264340371c839c22 HTTP/1.1
+
+#### render links
+
+PUT https://cse-341-1.onrender.com/contacts/66442859264340371c839c21 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "nick",
+    "lastName": "Keen",
+    "email": "nicknack2019@yahoo.com",
+    "favoriteColor": "blue",
+    "birthday": "06/12/1997"
+}
+
+###
+
+DELETE http://localhost:8080/contacts/66442859264340371c839c22 HTTP/1.1
+
