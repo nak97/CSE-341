@@ -1,6 +1,9 @@
 GET http://localhost:8080/contacts/
 
 ###
+GET http://localhost:8080/api-docs
+
+###
 # getting requests by id
 
 GET http://localhost:8080/contacts/66442859264340371c839c21
@@ -53,7 +56,7 @@ Content-Type: application/json
     "firstName": "nick",
     "lastName": "Keen",
     "email": "nicknack2019@yahoo.com",
-    "favoriteColor": "yellow",
+    "favoriteColor": "green",
     "birthday": "06/12/1997"
 }
 
